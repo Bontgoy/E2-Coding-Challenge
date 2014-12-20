@@ -1,6 +1,6 @@
-require_relative 'utopian_tree'
-require_relative 'growth_cycles'
-require_relative 'view'
+require_relative '../models/utopian_tree'
+require_relative '../models/growth_cycles'
+require_relative '../view/view'
 
 class DataControl
 	attr_reader :display
