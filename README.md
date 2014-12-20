@@ -31,7 +31,7 @@ Follow the commandline instructions
 
 RSPEC
 ===
-A few rsepc tests built the rspec folder 
+A few rsepc tests built in the rspec folder 
 
 E2-Coding-Challenge/rspec/
 
