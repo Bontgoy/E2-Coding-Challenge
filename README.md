@@ -35,6 +35,6 @@ A few rsepc tests built the rspec folder
 
 E2-Coding-Challenge/rspec/
 
-
-```rspec models_spec.rb
+```ruby 
+rspec models_spec.rb
 ```
