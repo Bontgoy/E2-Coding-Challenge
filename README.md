@@ -27,4 +27,4 @@ Run
 ruby program_runner.rb
 ```
 
-Follow rhe commandline instructions
+Follow the commandline instructions
