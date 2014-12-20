@@ -6,9 +6,9 @@ class GrowthCycles
 
 	def growth_counter(cycles)
 		while cycles > 0
-			if cycles % 2 == 0
-				spring
-			else
+			spring
+			cycles -= 1
+			if cycles > 0
 				summer
 			end
 			cycles -= 1
