@@ -28,3 +28,13 @@ ruby program_runner.rb
 ```
 
 Follow the commandline instructions
+
+RSPEC
+===
+A few rsepc tests built the rspec folder 
+
+E2-Coding-Challenge/rspec/
+
+
+```rspec models_spec.rb
+```
