@@ -12,8 +12,10 @@ class DataControl
 	def runner	
 		t = gets.chomp.to_i
 		test_counter = t
+		test_number = 1
 		tree_tracker = []
 
+		# wrong input test errors
 		if test_counter > 10
 			display.invalid_test_count
 		elsif test_counter < 1
@@ -22,14 +24,16 @@ class DataControl
 
 		display.cycle_caller
 		while test_counter >= 1 && test_counter <= 10
-			display.tree_pick(test_counter.to_s)
-			number_of_cycles = gets.chomp.to_i		
+			display.tree_pick(test_number)
+			number_of_cycles = gets.chomp.to_i
+				# growth cycle safegaurd
 				while number_of_cycles < 0 || number_of_cycles > 60
 					display.improper_cycles
 					number_of_cycles = gets.chomp.to_i
 				end
 			tree_tracker << number_of_cycles
 			test_counter -= 1
+			test_number += 1
 		end
 
 		run_tests(tree_tracker)
@@ -39,12 +43,14 @@ class DataControl
 	private
 
 	def run_tests(cycle_times)
+		tree = UtopianTree.new
+		tree.plant
+		
 		cycle_times.each_with_index do |cycles, index|
-			tree = UtopianTree.new
-			tree.plant
 			growth = GrowthCycles.new(tree)
 			growth.growth_counter(cycles)
 			display.results(index + 1, tree.height)
+			tree.height = 1
 		end
 	end
 end
