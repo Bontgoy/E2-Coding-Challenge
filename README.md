@@ -24,7 +24,7 @@ Clone the repo and navigate into the E2-Coding-Challenge directory folder.
 Run
 
 ```ruby 
-program_runner.rb
+ruby program_runner.rb
 ```
 
 Follow rhe commandline instructions
