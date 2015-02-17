@@ -1,5 +1,4 @@
 class ListDisplay
-	# view controls
 
 	def initialize
 		puts %Q{Enter the number of tests you would like to run on a Utopian Tree.}
